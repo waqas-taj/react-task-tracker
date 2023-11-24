@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# React Task Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple task tracker application built with React.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Scripts](#scripts)
 
-### `yarn start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is a basic task tracker application created with React. It allows users to add, delete, and toggle reminders for tasks. The application also includes a server using JSON Server to simulate a backend for storing and retrieving tasks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `yarn test`
+- Add tasks with a title, day, and optional reminder.
+- Delete tasks.
+- Toggle task reminders.
+- View the About page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/waqas-taj/react-task-tracker.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Change into the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd react-task-tracker
+   ```
 
-### `yarn eject`
+3. Install dependencies using Yarn:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   yarn install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Start the JSON Server (backend) by running:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   yarn server
+   ```
 
-## Learn More
+   This will start the server on `http://localhost:5000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. In a new terminal, start the React app:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   yarn start
+   ```
 
-### Code Splitting
+   This will start the React app on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Open your browser and go to `http://localhost:3000` to use the task tracker.
 
-### Analyzing the Bundle Size
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React
+- React DOM
+- React Icons
+- React Router DOM
+- JSON Server (for backend simulation during development)
+- Other dependencies for development (see `package.json`)
 
-### Making a Progressive Web App
+## Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `start`: Start the React app on `http://localhost:3000`.
+- `build`: Build the React app for production.
+- `test`: Run tests using Jest.
+- `eject`: Eject from Create React App for advanced configurations.
+- `server`: Start JSON Server to simulate a backend on `http://localhost:5000`.
